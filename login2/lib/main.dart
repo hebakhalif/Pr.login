@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:login2/screens/homelogin.dart';
 
 void main() {
@@ -57,12 +57,25 @@ Padding(
          ),
      ),*/
 
-     TextField(
+     /*TextField(
   decoration: InputDecoration(
     border: OutlineInputBorder(),
     hintText: 'Enter email',
   ),
-),
+),*/
+
+ Container(
+   width: 400,
+        height:60 ,
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+        color: Color.fromARGB(117, 100, 72, 146),
+        ),
+   child: TextFormField(
+              decoration: const InputDecoration(
+                border: UnderlineInputBorder(),
+                labelText: 'Enter your username',
+              ),),
+ ),
           Spacer(flex:29),
 
  Padding(
@@ -150,4 +163,25 @@ Padding(
        ),
           );
                }
-                   }
+                   }  */
+
+
+import 'package:flutter/material.dart';
+//import 'package:login2/screens/homelogin.dart';
+import 'package:login2/screens/login.dart';
+
+void main() {
+  runApp(const LoginApp());
+}
+
+class LoginApp extends StatelessWidget {
+  const LoginApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
+    );
+  }
+}
